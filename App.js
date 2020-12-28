@@ -1,10 +1,13 @@
 import React from 'react';
-import {View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import Routes from './src/Routes';
 
-// import { Container } from './styles';
-
-const ReactNativeChatApp = () => {
-  return <View />;
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
+  );
 };
 
-export default ReactNativeChatApp;
+export default App;
